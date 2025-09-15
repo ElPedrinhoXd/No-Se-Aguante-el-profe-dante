@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Juego UwU</title>
+</head>
+<body>
+
+    <h1>Guita: {{ contador }}</h1>
+    <h2>Sueldo actual: +{{ sumador }} (Costo De Ascenso: {{ costo_mejora }})</h2>
+
+    {% if contador >= costo_mejora %}
+    <h3>¡Ya Puedes Conseguir Un Ascenso!</h3>
+    {% endif %}
+
+    <form action="/sumar" method="post">
+        <button>Chambear</button>
+    </form>
+    
+    <form action="/mejorarBoton" method="post">
+        <button>Conseguir Un Ascenso</button>
+    </form>
+
+    <a class="boton" href="/AdvinoTuNumero">Acudir a un Chamán (es al pedo)</a><br>
+    <a class="boton" href="/loteria">Ir a apostar</a>
+
+    <body class="adivinador-body">
+
+
+
+</body>
+</html>

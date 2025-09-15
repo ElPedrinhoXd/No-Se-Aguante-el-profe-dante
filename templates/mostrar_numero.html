@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Tu Número</title>
+</head>
+<body>
+
+    <h1>El número que ingresaste es:</h1>
+    <div class="resultado-numero">{{ numero }}</div>
+
+    <div class="botones-container">
+        <a class="boton" href="/AdvinoTuNumero">Volver a Acudir</a>
+        <a class="boton" href="/">Volver al inicio</a>
+    </div>
+
+</body>
+</html>

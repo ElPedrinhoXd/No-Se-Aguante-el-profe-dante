@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #caf0f8;
+    padding: 2rem;
+    text-align: center;
+    background-image: url("https://thaka.bing.com/th/id/OIP.etBGCkVdIc67TREpkTeikgHaEk?w=284&h=180&c=7&r=0&o=7&pid=1.7&rm=3");
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+h1 {
+    color: #06d6a0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #06d6a0;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+button, .boton {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    margin: 0.5rem 0.5rem;
+    background-color: #06d6a0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.3s ease;
+}
+
+button:hover, .boton:hover {
+    background-color: #05c18c;
+    transform: scale(0.95);
+}
+
+button:active, .boton:active {
+    transform: scale(0.9);
+}
+
+.resultado-numero {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.botones-container {
+    display: flex;
+    flex-direction: column; /* los botones se apilan verticalmente */
+    align-items: center;    /* centrados */
+    gap: 1rem;              /* separación entre botones */
+    margin-top: 1rem;
+}
+
